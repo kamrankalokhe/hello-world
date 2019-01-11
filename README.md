@@ -1,3 +1,2 @@
-# hello-world
-First git repo
-Testing how it works.
+# Python examples
+Few of the examples are from edX course
