@@ -34,3 +34,9 @@ def is_anagram(s1,s2):
 
 print(is_anagram('anagram','nagaram'))
 print(is_anagram('cat','rat'))
+
+
+from collections import Counter
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return Counter(s) == Counter(t)
