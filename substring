@@ -1,0 +1,29 @@
+def index_of_subs(T,S):
+    index1=0
+    index2=0
+    
+    while index1 < len(T):
+        if T[index1] == S[0]:
+            outer_index = index1
+            while index2 < len(S):
+                if T[index1] == S[index2]:
+                    index1 +=1
+                    if index2 == len(S)-1:
+                        print('subsrting found at index',outer_index)
+                    index2 +=1
+                else:
+                    #index1=outer_index+1
+                    #index2 =0
+                    break
+            index1=outer_index+1
+            index2 =0
+            
+        else:
+            index1 += 1
+
+T = 'adsbccadcdebabcdeliuidghcdfbvvabcde'
+S='abcde'
+index_of_subs(T,S)
+
+#subsrting found at index 12
+#subsrting found at index 30
